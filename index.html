@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         /*let questions=["На планете всего 4 океана?","Земля 5-ая планета от солцна?","Динозавры вымерли из-за метеорита?","Индия самая населенная страна в мире?"];
+         let answers = [false,false,true,true];
+         let result=0;
+         for (let index = 0; index < questions.length; index++) 
+         {
+             let answer=confirm(questions[index]);
+             if(answer==answers[index])
+                result+=25;
+         }
+         alert(`Результаты: ${result}`);
+         -------------------------------------------------------------*/ 
+
+
+
+
+         /*name=prompt("Введите имя на кирилице: ");
+         validator: for (let index = 0; index < name.length; index++)
+          {
+            if(name[index]<='я' && name[index]>='а' || name[index]>='А' && name[index]<='Я' || name[index]==' ')
+            {
+                continue;
+            }
+            else
+            {
+                document.write("Вы неправильно ввели имя")
+                break validator;
+            }
+         }
+         -------------------------------------------------------*/ 
+
+
+
+
+        /* let protocol;
+        let host;
+        let path;
+        let filename;
+        let stringreq;
+        let adress="http://www.ufa.com.ua/utilities/hdd/out.php?sort=2";
+        let lastpathindex;
+        for (let index = adress.length-1; index >= 0; index--) {
+            if(adress[index]=="/")
+            {
+               lastpathindex=index;
+               break;
+            }
+        }
+        protocol=adress.substring(0,adress.indexOf("//"));
+        host=adress.substring(adress.indexOf("//")+2,adress.indexOf("/",adress.indexOf("//")+2));
+        path=adress.substring(host.length+protocol.length+2,lastpathindex+1);
+        filename=adress.substring(lastpathindex+1,adress.indexOf("?"));
+        stringreq=adress.substring(adress.indexOf("?")+1,adress.length);
+        document.write(protocol,"<br>");
+        document.write(host,"<br>");
+        document.write(path,"<br>");
+        document.write(filename,"<br>");
+        document.write(stringreq,"<br>");
+        ------------------------------------------------------------------------*/ 
+
+        
+
+
+        /*function concatArrs(arr1,arr2) {
+            let newarr=arr1.concat(arr2);
+            for (let index = 0; index < newarr.length; index++) {
+                for (let j = 1; j < newarr.length; j++) {
+                    if(j==index)
+                    {
+                        continue;
+                    }
+                    if(newarr[index]==newarr[j])
+                    {
+                        newarr.splice(j,1);
+                    }
+                }
+            }
+            return newarr;
+        }
+        arr1=[5,5,7,8];
+        arr2=[6,7,9,0];
+        let newarr=concatArrs(arr1,arr2);
+        for (let index = 0; index < newarr.length; index++) {
+            document.write(newarr[index]," ");
+        }
+        -------------------------------------------*/ 
+
+
+
+        /*function cmnElements(arr1,arr2)
+        {
+            let newarr=[];
+            for (let index = 0; index < arr1.length; index++) {
+                if(arr1[index]==arr2[index])
+                {
+                      newarr.push(arr1[index]);
+                }
+             }
+             return newarr;
+        }
+        arr1=[5,5,7,8];
+        arr2=[5,6,7,9];
+        let newarr=cmnElements(arr1,arr2);
+        for (let index = 0; index < newarr.length; index++) {
+            document.write(newarr[index]," ");
+        }
+        -----------------------------------------------------*/
+
+
+
+        /*function dfrntElements(arr1,arr2)
+        {
+            let newarr=[];
+            for (let index = 0; index < arr1.length; index++) {
+                flag=true;
+                for (let j = 0; j < arr2.length; j++) {
+                    if(arr1[index]==arr2[j])
+                    {
+                           flag=false;
+                    }
+                    
+                }
+                if(flag)
+                     newarr.push(arr1[index]);
+             }
+             return newarr;
+        }
+        arr1=[5,5,7,8];
+        arr2=[5,6,7,9];
+        let newarr=dfrntElements(arr1,arr2);
+        for (let index = 0; index < newarr.length; index++) {
+            document.write(newarr[index]," ");
+        }
+        ----------------------------------*/
+
+
+
+
+           /* let fruits = ["Apple", "Banana", "Coconut","Cherry"];
+            document.write("<ul>")
+            for(let index=0; index<fruits.length; index++)
+            {
+                fruits[index]=fruits[index].toLowerCase();
+                document.write("<li>" , fruits[index], "</li>");
+            }
+            document.write("</ul>");
+
+            function find(fruit,fruits)
+            {
+                found=fruit.toLowerCase();
+                return fruits.indexOf(found);
+            }
+            document.write(find("COCONUT",fruits));
+            */
+        </script>
+</body>
+</html>
